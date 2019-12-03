@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import TicketList from './TicketList';
-import TicketDetail from './TicketDetail';
+import React from "react";
+import PropTypes from "prop-types";
+import TicketList from "./TicketList";
+import TicketDetail from "./TicketDetail";
 
 function Admin(props) {
   let optionalSelectedTicketContent = null;
