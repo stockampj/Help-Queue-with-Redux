@@ -5,8 +5,8 @@ import NewTicketControl from "./NewTicketControl";
 import Error404 from "./Error404";
 import { Switch, Route, withRouter } from "react-router-dom";
 import Admin from "./Admin";
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 class App extends React.Component {
 
@@ -76,9 +76,9 @@ App.propTypes = {
 
 const mapStateToProps = state => {
   return {
-    masterTicketList: state
-  }
-}
+    masterTicketList: state.masterTicketList
+  };
+};
 
 
 export default withRouter(connect(mapStateToProps)(App));
