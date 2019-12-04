@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 
 function Ticket(props) {
 
   function handleSavingSelectedTicket(ticketId){
     const { dispatch } = props;
     const action = {
-      type: 'SELECT_TICKET',
+      type: "SELECT_TICKET",
       ticketId: ticketId
     };
     dispatch(action);
